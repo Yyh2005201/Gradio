@@ -10,6 +10,6 @@ The basics of building a gradio app:
 5. Input field: In Gradio, an input field does not correspond to a specific component named gr.Input. Instead, it is a general term referring to any interactive component that allows the user to provide input to the application. Common input fields include gr.Textbox for text input, gr.Slider for numerical input, and gr.Image for image input. Whether a component functions as an input or an output is determined by how it is connected to the callback function (e.g., listed in the inputs or outputs argument of a .click() or .change() method), rather than by the component type itself.
 
 
-
+In this project, I developed an interactive 'RPG(role-playing game) Character Creator' where you can create the feature of your character by yourself application using the Gradio library. I utilized the gr.Blocks API to design a custom layout, organizing the interface into specific Rows and Columns for a clean user experience. The app features various input components, including Sliders for adjusting character statistics (Strength, Magic, Speed), a Textbox for the name, and an Image uploader for the avatar. I implemented a backend Python function that processes these inputs to calculate a total 'Power Level,' dynamically assigns a character class (e.g., Warrior, Mage), and generates a formatted character sheet as the output.
 
 
