@@ -2,7 +2,7 @@
 Huggingface and gradio
 
 
-The basics of building a gradio app:
+# The basics of building a gradio app:
 1. gr.Row() Places components horizontally.
 2. gr.Column() Places components vertically.
 3. gr.Image() Allows users to upload or draw an image.
@@ -13,3 +13,8 @@ The basics of building a gradio app:
 In this project, I developed an interactive 'RPG(role-playing game) Character Creator' where you can create the feature of your character by yourself application using the Gradio library. I utilized the gr.Blocks API to design a custom layout, organizing the interface into specific Rows and Columns for a clean user experience. The app features various input components, including Sliders for adjusting character statistics (Strength, Magic, Speed), a Textbox for the name, and an Image uploader for the avatar. I implemented a backend Python function that processes these inputs to calculate a total 'Power Level,' dynamically assigns a character class (e.g., Warrior, Mage), and generates a formatted character sheet as the output.
 
 
+
+# Use the huggingface transformers library and its pipelines to build a gradio app.
+This application demonstrates how to use the Hugging Face transformers library and its pipelines to build a gradio app for text summarization.
+
+It utilizes the pre-trained facebook/bart-large-cnn model within a summarization pipeline to process long articles into concise summaries. The application is designed to run on the CPU (device=-1) to ensure stability across different hardware environments. The user interface, constructed using gradio.Blocks, features adjustable sliders that allow users to control the maximum and minimum length of the generated summary dynamically.
